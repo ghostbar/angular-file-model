@@ -1,0 +1,23 @@
+{
+  "name": "angular-file-model",
+  "version": "0.0.1",
+  "authors": [
+    "Jose Luis Rivas <me@ghostbar.co>"
+  ],
+  "description": "Angular support for file in models",
+  "main": "index.js",
+  "keywords": [
+    "file",
+    "model",
+    "angular",
+    "directory"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
