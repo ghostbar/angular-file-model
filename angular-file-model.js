@@ -8,28 +8,23 @@
 (function () {
   'use strict';
 
-  angular.module('angular-file-model', [])
-
+  angular.module('angular-file-model')
     .directive('fileModel', [
-      function () {
-        return {
+      '$parse', 
+      function ($parse) {
+      return {
           restrict: 'A',
-          scope: {
-            fileModel: '='
-          },
-          link: function(scope, element) {
-            element.bind('change', function(event){
-              var files = event.target.files;
-              var file = files[0];
-
-              scope.fileModel = file ? file.name : undefined;
-
-              scope.$apply();
-            });
+          link: function(scope, element, attrs) {
+              var model = $parse(attrs.fileModel);
+              var modelSetter = model.assign;
+              
+              element.bind('change', function(){
+                  scope.$apply(function(){
+                      modelSetter(scope, element[0].files[0]);
+                  });
+              });
           }
-        };
-      }
-    ]
-  );
+      };
+  }]);
 
 })();
