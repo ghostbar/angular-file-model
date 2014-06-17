@@ -5,7 +5,7 @@
     "Jose Luis Rivas <me@ghostbar.co>"
   ],
   "description": "Angular support for file in models",
-  "main": "index.js",
+  "main": "angular-file-model.js",
   "keywords": [
     "file",
     "model",
