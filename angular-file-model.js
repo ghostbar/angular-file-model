@@ -8,7 +8,7 @@
 (function () {
   'use strict';
 
-  angular.module('angular-file-model', [])
+  angular.module('file-model', [])
 
   .directive('fileModel', [
     '$parse',

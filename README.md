@@ -17,13 +17,13 @@ Add to your HTML files:
 
 Now, inject to your application:
 
-    angular.module('myApp', ['angular-file-model']);
+    angular.module('myApp', ['file-model']);
 
 Ready to use in your controllers!:
 
 `file.html`:
 
-    <input type='file' file-upload='fileModel'>
+    <input type='file' file-model='fileModel'>
     <button type='button' ng-click='upload()'>Upload</button>
 
 `controller.js:`
