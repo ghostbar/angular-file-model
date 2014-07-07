@@ -6,7 +6,7 @@ describe('angular-file-model directive', function () {
   var $compile, $rootScope;
   var expect = chai.expect;
 
-  beforeEach(module('angular-file-model'));
+  beforeEach(module('file-model'));
 
   beforeEach(inject(
     ['$compile', '$rootScope', function ($c, $r) {
@@ -17,7 +17,7 @@ describe('angular-file-model directive', function () {
 
   it('', function () {
     $rootScope.fileModel = '';
-    var element = $compile('<input type=\'file\' file-upload=\'fileModel\'>')
+    var element = $compile('<input type=\'file\' file-model=\'fileModel\'>')
     ($rootScope);
     $rootScope.$digest();
     console.log($rootScope.fileModel);
