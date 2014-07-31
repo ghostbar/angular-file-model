@@ -37,6 +37,11 @@ Ready to use in your controllers!:
       }
     ]
 
+Need an actual demo?
+--------------------
+
+Go and check this out <http://plnkr.co/edit/0ZHCsR>.
+
 Author
 ------
 © 2014, Jose Luis Rivas `<me@ghostbar.co>`. 
