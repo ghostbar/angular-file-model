@@ -42,6 +42,11 @@ Need an actual demo?
 
 Go and check this out <http://plnkr.co/edit/0ZHCsR>.
 
+Known Issues
+------------
+
++ **Using a the modal controller from angular-ui I can't update the variable assigned to file-model**: This is not an issue directly with `angular-file-model`. It's created because the modal controller uses transclusion. Actually, you can't update any other values directly. My workaround for this has been passing an empty object to the controller's scope and putting the file-model (just like other data from fields from the modal) into that object, so what I pass to `file-model` is something like: 'data.file' instead and it works. (`data` being already initialized as `{}` at least in the controller)
+
 Author
 ------
 © 2014, Jose Luis Rivas `<me@ghostbar.co>`. 
