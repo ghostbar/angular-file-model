@@ -1,6 +1,6 @@
 {
   "name": "angular-file-model",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Angular support for file in models",
   "main": "angular-file-model.js",
   "scripts": {
