@@ -21,7 +21,7 @@
 
           element.bind('change', function(){
             scope.$apply(function(){
-              if (element[0].files.length > 1) {
+              if (attrs.multiple) {
                 modelSetter(scope, element[0].files);
               }
               else {
