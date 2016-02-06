@@ -1,4 +1,4 @@
-angular-file-model [![Code Climate](https://codeclimate.com/github/ghostbar/angular-file-model-lite/badges/gpa.svg)](https://codeclimate.com/github/ghostbar/angular-file-model-lite)
+angular-file-model [![Code Climate](https://codeclimate.com/github/ghostbar/angular-file-model/badges/gpa.svg)](https://codeclimate.com/github/ghostbar/angular-file-model)
 ==================
 
 Simple Angular.js directive that allows input element's of type `file` to be 
